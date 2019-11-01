@@ -2,6 +2,7 @@
 A small python module to help preform boolean algebra and state table calculations
 
 ![Example](/images/example.png)
+* Example of digitallogic with numpy in [nteract](https://nteract.io/).
 
 ## Dependancy's
  - [Numpy](https://docs.scipy.org/doc/numpy/reference/index.html)
