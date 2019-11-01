@@ -5,13 +5,6 @@
 # Requites numpy
 import numpy as np
 
-'''
-Things to Implement:
-    - More standard arrays
-    - A function to output the data to a csv file
-    - More flip flop application tables
-    - logic units for flip flops? 
-'''
 # Define standard arrays
 two = np.array([[0],
                 [1]])
@@ -54,7 +47,7 @@ TPRINT
     Returns
         nothing...just pretty printing
 
-Note: If things look off, it's probably because you didn't enter something in correctly...
+Note: If things look off, it's probably because something wasn't entered correctly...
 '''
 
 def tprint(data, labels):
@@ -162,7 +155,7 @@ def app_table(ff, present_s, next_s):
     if present_s.shape != next_s.shape:
         print("********************************")
         print("The present state and next state\narrays are of mismatched shape.")
-        print("This won't work. Fix it.\n********************************")
+        print("This won't work.\n********************************")
 
         return
 
@@ -188,7 +181,7 @@ def app_table(ff, present_s, next_s):
 
         return jk 
     else:
-        print("Either the type of FF you are asking for is not implemented or you screwed up typing")
+        print("The type of FF you are asking for is not implemented")
         return np.zeros(present_s.shape, dtype=int)
 
 '''
