@@ -12,7 +12,7 @@ A small python module to help preform boolean algebra and state table calculatio
 At some point here, I will get a setup wheel going, but for now just copy the file into your site-packages folder.
 
 ## Goals
-The goal is not to be a one stop all module. There are plenty of great projects out there for doing binary data analysis. The goal is simply to complement the capabilities of numpy to ease the process of using numpy for digital logic calculations. 
+The goal is not to be a one stop all module. There are plenty of great projects out there for doing binary data analysis. The goal is simply to complement the capabilities of numpy and to ease the process of using numpy for digital logic calculations. 
 
 ## Things to do
 - [ ] Get Setup wheel and pip installation
