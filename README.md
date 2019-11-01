@@ -1,7 +1,7 @@
 # Digital Logic
 A small python module to help preform boolean algebra and state table calculations
 
-![Example](/images/example.jpg)
+![Example](/images/example.png)
 
 ## Dependancy's
  - [Numpy](https://docs.scipy.org/doc/numpy/reference/index.html)
