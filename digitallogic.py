@@ -5,13 +5,6 @@
 # Requites numpy
 import numpy as np
 
-'''
-Things to Implement:
-    - More standard arrays
-    - A function to output the data to a csv file
-    - More flip flop application tables
-    - logic units for flip flops? 
-'''
 # Define standard arrays
 two = np.array([[0],
                 [1]])
@@ -54,7 +47,6 @@ TPRINT
     Returns
         nothing...just pretty printing
 
-Note: If things look off, it's probably because you didn't enter something in correctly...
 '''
 
 def tprint(data, labels):
@@ -162,7 +154,7 @@ def app_table(ff, present_s, next_s):
     if present_s.shape != next_s.shape:
         print("********************************")
         print("The present state and next state\narrays are of mismatched shape.")
-        print("This won't work. Fix it.\n********************************")
+        print("This won't work.\n********************************")
 
         return
 
@@ -187,8 +179,31 @@ def app_table(ff, present_s, next_s):
                     jk[x,2*y+1] = 0
 
         return jk 
+    elif ff == 'sr' or ff == 'SR':
+        (row, column) = present_s.shape
+        sr = np.zeros((row, 2 * column), dtype = int)
+
+        for x in range(0,row):
+            for y in range(0,column):
+                
+                if present_s[x,y] == 0 and next_s[x,y] == 0:
+                    sr[x,2*y] = 0
+                    sr[x,2*y+1] = 9 
+                elif present_s[x,y] == 0 and next_s[x,y] == 1:
+                    sr[x,2*y] = 1
+                    sr[x,2*y+1] = 9
+                elif present_s[x,y] == 1 and next_s[x,y] == 0:
+                    sr[x,2*y] = 9 
+                    sr[x,2*y+1] = 1
+                elif present_s[x,y] == 1 and next_s[x,y] == 1:
+                    sr[x,2*y] = 8 
+                    sr[x,2*y+1] = 8
+
+        return sr 
+
+
     else:
-        print("Either the type of FF you are asking for is not implemented or you screwed up typing")
+        print("The type of FF you are asking for is not implemented")
         return np.zeros(present_s.shape, dtype=int)
 
 '''
@@ -224,7 +239,7 @@ inputs = eight
 outputs = eight
 if __name__ == "__main__": 
     label = ['A', 'B', 'C', 'A+', 'B+', 'C+', 'j', 'k', 'j', 'k', 'j', 'k'  ]
-    tprint((inputs, b(outputs), app_table('jk', inputs, b(outputs))), label)
+    tprint((inputs, b(outputs), app_table('sr', inputs, b(outputs))), label)
 #    print(app_table('jk', sixteen, sixteen))
 
 
