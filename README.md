@@ -15,8 +15,8 @@ At some point here, I will get a setup wheel going, but for now just copy the fi
 The goal is not to be a one stop all module. There are plenty of great projects out there for doing binary data analysis. The goal is simply to complement the capabilities of numpy and to ease the process of digital logic calculations. 
 
 ## Things to do
-- [ ] Get Setup wheel and pip installation
-- [ ] Add function to output calculations to CSV file
+- [x] Get Setup wheel and pip installation
+- [x] Add function to output calculations to CSV file
 - [ ] Add more flip flop application tables
 - [ ] Add more standard input arrays (i.e., 2^5, 2^6, etc)
 - [ ] Error handling...beacuse it's a good thing and so far non-existant :)

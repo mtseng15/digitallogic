@@ -335,6 +335,13 @@ def b(base):
     # Return the new array
     return comp
 
+'''
+csv_out takes in the file location and the array to be outputed and outputs the array as an ineger 
+csv file. 
+
+'''
+def csv_out(file_loc, array):
+        np.savetxt(file_loc, array.astype(int), fmt='%1.f', delimiter=",")
 
     
 # testing
