@@ -9,12 +9,18 @@ A small python module to help preform boolean algebra and state table calculatio
 
 ## Installation
 To install, activate virtual chosen virtual enviroment.
-    source ./path/to/activate
+```
+source ./path/to/activate
+```
 Clone repository.
-    git clone https://github.com/mtseng15/digitallogic.git
+```
+git clone https://github.com/mtseng15/digitallogic.git
+```
 Use pip to install.
-    cd digitallogic
-    pip install
+```
+cd digitallogic
+pip install
+```
 
 ## Goals
 The goal is not to be a one stop all module. There are plenty of great projects out there for doing binary data analysis. The goal is simply to complement the capabilities of numpy and to ease the process of digital logic calculations. 
