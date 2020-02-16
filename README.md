@@ -6,10 +6,15 @@ A small python module to help preform boolean algebra and state table calculatio
 
 ## Dependancy's
  - [Numpy](https://docs.scipy.org/doc/numpy/reference/index.html)
- 	Install numpy using pip
 
 ## Installation
-At some point here, I will get a setup wheel going, but for now just copy the file into your site-packages folder.
+To install, activate virtual chosen virtual enviroment.
+    source ./path/to/activate
+Clone repository.
+    git clone https://github.com/mtseng15/digitallogic.git
+Use pip to install.
+    cd digitallogic
+    pip install
 
 ## Goals
 The goal is not to be a one stop all module. There are plenty of great projects out there for doing binary data analysis. The goal is simply to complement the capabilities of numpy and to ease the process of digital logic calculations. 
