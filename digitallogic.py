@@ -183,7 +183,7 @@ def tprint(data, labels):
 
     # Print out the top bar
     for i in range(0, total_pad + len(spacing) +  2 * len(data)):
-        print("=", end=" ", flush=True)
+        print("=", end="", flush=True)
     print("=")
 
     # Print out the label header

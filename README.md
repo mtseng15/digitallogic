@@ -1,5 +1,5 @@
 # Digital Logic
-A small python module to help preform boolean algebra and state table calculations
+A small python module to help perform boolean algebra and state table calculations
 
 ![Example](/images/example2.png)
 * Example of digitallogic with numpy in [nteract](https://nteract.io/).
@@ -8,18 +8,22 @@ A small python module to help preform boolean algebra and state table calculatio
  - [Numpy](https://docs.scipy.org/doc/numpy/reference/index.html)
 
 ## Installation
-To install, activate virtual chosen virtual enviroment.
+To install, activate virtual chosen virtual enviroment
 ```
 source ./path/to/activate
 ```
-Clone repository.
+Clone repository
 ```
 git clone https://github.com/mtseng15/digitallogic.git
 ```
-Use pip to install.
+Use pip to install
 ```
 cd digitallogic
 pip install
+```
+Or for development
+```
+pip install e .
 ```
 
 ## Goals
@@ -33,7 +37,7 @@ The goal is not to be a one stop all module. There are plenty of great projects 
 - [ ] Error handling...beacuse it's a good thing and so far non-existant :)
 
 ## Contribution
-Please feel free to submit pull requests! Contributions are more than welcome as longs as they follow the goals of this project.
+Please feel free to submit pull requests! Contributions are more than welcome as long as they follow the goals of this project.
 
 
 ## License
